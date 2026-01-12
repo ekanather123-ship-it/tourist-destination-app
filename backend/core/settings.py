@@ -23,7 +23,7 @@ DEBUG = True
 SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 # DEBUG = os.getenv("DEBUG", "False") == "True"
 ALLOWED_HOSTS = [
-    "tourist-destination-app.onrender.com"
+    "tourist-destination-app.onrender.com",
     "localhost",
     "127.0.0.1",
     "0.0.0.0",
