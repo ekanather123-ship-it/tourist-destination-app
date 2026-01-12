@@ -10,7 +10,7 @@ const DestinationList = ({ searchTerm }) => {
     useEffect(() => {
         let mounted = true;
 
-        fetch(`${API_BASE}/api/destinations/`)
+        fetch("https://tourist-destination-app.onrender.com/api/destinations/")
             .then((response) => {
                 if (!response.ok) throw new Error(`API error ${response.status}`);
                 return response.json();
