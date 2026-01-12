@@ -48,7 +48,7 @@ const DestinationList = ({ searchTerm }) => {
     }, [destinations, normalizedSearch]);
     const handleDelete = async (id) => {
         try {
-            await fetch(`http://127.0.0.1:8000/api/destinations/${id}/`, {
+            await fetch(`https://tourist-destination-app.onrender.com/api/destinations/${id}/`, {
                 method: "DELETE",
             });
 
