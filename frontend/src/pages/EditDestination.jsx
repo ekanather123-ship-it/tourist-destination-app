@@ -14,7 +14,7 @@ export default function EditDestination() {
 
     // Fetch existing destination data
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/api/destinations/${id}/`)
+        fetch(`https://tourist-destination-app.onrender.com/api/destinations/${id}/`)
             .then((res) => res.json())
             .then((data) => {
                 setForm({
@@ -44,7 +44,7 @@ export default function EditDestination() {
         if (form.image) data.append("image", form.image); // Append only if new image selected
 
         try {
-            await fetch(`http://127.0.0.1:8000/api/destinations/${id}/`, {
+            await fetch(`https://tourist-destination-app.onrender.com/api/destinations/${id}/`, {
                 method: "PATCH",
                 body: data,
             });

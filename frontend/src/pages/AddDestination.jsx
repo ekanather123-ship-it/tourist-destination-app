@@ -30,7 +30,7 @@ export default function AddDestination() {
         data.append("description", formData.description);
         data.append("image", formData.image);
 
-        const response = await fetch("http://127.0.0.1:8000/api/destinations/", {
+        const response = await fetch("https://tourist-destination-app.onrender.com/api/destinations/", {
             method: "POST",
             body: data,
         });

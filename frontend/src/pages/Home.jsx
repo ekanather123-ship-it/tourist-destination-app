@@ -5,7 +5,7 @@ export default function Home() {
     const [destinations, setDestinations] = useState([]);
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/api/destinations/")
+        fetch("https://tourist-destination-app.onrender.com/api/destinations/")
             .then((res) => res.json())
             .then((data) => {
                 console.log("Fetched from backend:", data);
